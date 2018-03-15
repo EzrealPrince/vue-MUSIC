@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}添加歌曲{% endblock %}
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
+                {% if state == 'success' %}
+                    <div class="well">
+                        <h2 class="text-success text-center">添加成功</h2>
+                    </div>
+                {% endif %}
+                <form method="POST" role="form" class="form-horizontal">
+                    {% csrf_token %}
+                    <h1 class="form-signin-heading text-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;添加歌曲</h1>
+
+                    <div  style="margin-top:40px" class="form-group">
+                        <label style="color:saddlebrown" for="id_song_name" class="col-md-3 control-label">歌曲名称：</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="id_song_name" required name="song_name"placeholder="song name"
+                                   autofocus>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_author" class="col-md-3 control-label">歌曲演唱：</label>
+                        <div class="col-md-9">
+								<input type="text" class="form-control" required name="song_author" placeholder="song singer" id="id_author">
+							</div>
+						</div>
+						<div class="form-group">
+								<label style="color:saddlebrown" for="id_type" class="col-md-3 control-label">歌曲曲风：</label>
+								<div class="col-md-9">
+										<input type="text" class="form-control" required name="song_type" placeholder="song type" id="id_type">
+									</div>
+								</div>
+						         <div class="form-group">
+										<label for="id_language" class="col-md-3 control-label">歌曲曲种：</label>
+										<div class="col-md-9">
+												<input type="text" class="form-control" required name="song_language"  placeholder="song language" id="id_language">
+											</div>
+										</div>
+										<div class="form-group">
+												<label style="color:saddlebrown" for="id_pinyin" class="col-md-3 control-label">歌曲拼音：</label>
+												<div class="col-md-9">
+														<input placeholder="song pinyin" type="text" class="form-control" required name="song_pinyin" id="id_pinyin">
+													</div>
+												</div>
+						<div class="form-group">
+							<div style="margin-left:230px;margin-top:20px " class="col-md-4 col-md-offset-4">
+								<button class="btn btn btn-primary btn-block" type="submit">提交</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	
+{% endblock %}
+														 

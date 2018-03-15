@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}查看歌曲{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-5">
+                            <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                </div>
+                <div class="col-md-6 col-md-offset-1">
+                    <h2 class="text-center">{{ song.song_name }}</h2>
+                    <br>
+                    <h3>歌手：{{ song.song_author }}</h3>
+                    <h3>类别：{{ song.song_type }}</h3>
+                    <h3>语种：{{ song.song_language }}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
