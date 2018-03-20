@@ -5,8 +5,8 @@
 下载到本地 python3 manage.py runserver 0.0.0.0:8000 
 本地浏览 localhost:8000
 # 预览
+![avatar](https://github.com/EzrealPrince/SPA-blog/tree/master/githubIMG/1.png)
 
-! [ 1 ] （https://github.com/EzrealPrince/SPA-blog/tree/master/githubIMG/1.png）
 
 
 
