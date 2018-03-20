@@ -4,3 +4,18 @@
 # 安装步骤
 下载到本地 python3 manage.py runserver 0.0.0.0:8000 
 本地浏览 localhost:8000
+# 预览
+
+
+
+
+
+
+
+
+
+
+
+
+
+
